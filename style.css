@@ -1,65 +1,94 @@
-* {
+/* General Reset */
+* { 
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Header Styling */
 h1 {
-    background-color: #081b31;
+    background: linear-gradient(135deg, #081b31, #1a2a4f);
     color: white;
     height: 5rem;
     line-height: 5rem;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.choice{
+
+/* Choice Styling */
+.choice {
     height: 165px;
     width: 165px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.choice:hover{
+
+.choice:hover {
     cursor: pointer;
-    background-color: #081b31 ;
+    background: linear-gradient(135deg, #081b31, #1a2a4f);
+    transform: scale(1.1);
 }
 
-
-img{
+/* Choice Image Styling */
+img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
+    transition: 0.3s;
 }
-.choices{
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Choices Layout */
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     margin-top: 5rem;
-
 }
+
+/* Scoreboard */
 .score-board {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2 rem;
+    font-size: 2rem;
     margin-top: 3rem;
-    gap:5rem ;
+    gap: 5rem;
 }
-#user-score,
-#comp-score{
-    font-size: 4rem;
 
+#user-score, #comp-score {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #081b31;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Message Container */
 .msg-container {
     margin-top: 5rem;
-  }
-  
-  #msg {
-    background-color: #081b31;
+}
+
+#msg {
+    background: linear-gradient(135deg, #081b31, #1a2a4f);
     color: #fff;
     font-size: 2rem;
     display: inline;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
-  }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#msg:hover {
+    transform: scale(1.1);
+}
